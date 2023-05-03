@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+}
+
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    td {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    img:hover {
+        transform: none;
+    }
+   
+}
