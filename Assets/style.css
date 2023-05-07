@@ -80,7 +80,7 @@ nav ul li a {
 
 .btn {
     display: inline-block;
-    background-color: #fff;
+    background-color: #ec5c24;
     color: #111;
     font-size: 18px;
     padding: 15px 30px;
@@ -109,14 +109,14 @@ nav ul li a {
     margin-bottom: 40px;
 }
 
-/* Products Section Styles */
-.products {
+/* offers Section Styles */
+.offers {
     background-color: #222;
     padding: 50px 0;
 
 }
 
-.product-grid {
+.offer-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -124,7 +124,7 @@ nav ul li a {
     color: #111;
 }
 
-.product {
+.offer {
     width: 300px;
     background-color: #fff;
     border-radius: 5px;
@@ -132,22 +132,22 @@ nav ul li a {
     overflow: hidden;
 }
 
-.product img {
+.offer img {
     width: 100%;
     height: auto;
 }
 
-.product h3 {
+.offer h3 {
     font-size: 24px;
     margin: 20px;
 }
 
-.product p {
+.offer p {
     font-size: 16px;
     margin: 0 20px 20px;
 }
 
-.product a {
+.offer a {
     display: block;
     background-color: #4CAF50;
     color: #fff;
@@ -156,7 +156,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.product a:hover {
+.offer a:hover {
     background-color: #3e8e41;
 }
 
@@ -212,6 +212,40 @@ nav ul li a {
     background-color: #eee;
 }
 
+.links {
+    color: #ec5c24;
+    font-size: 25px;
+    width: 15vh;
+    margin: auto;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+footer a{
+    color: #ec5c24;
+    width: 15vh;
+    margin: auto;
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.contact-info ul {
+    text-decoration: none;
+    list-style: none;
+}
+
 /* Footer Styles */
 footer {
     background-color: #111;
@@ -226,8 +260,78 @@ footer p {
     font-size: 18px;
 }
 
+
+
 /* Media Queries */
 @media (max-width: 768px) {
+
+    /* Navigation Bar */
+    /* hide the menu initially */
+    nav {
+        display: none;
+    }
+
+    /* style the hamburger button */
+    .toggle-button {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* style the bars of the hamburger button */
+    .bar {
+        display: block;
+        height: 2px;
+        width: 25px;
+        margin: 5px auto;
+        background-color: #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* rotate the bars when the menu is open */
+    .toggle-button.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-button.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    /* show the menu when the button is clicked */
+    .toggle-button.active~nav {
+        display: block;
+    }
+
+    /* style the menu */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        background-color: #ec5c24;
+        color: #111;
+        font-size: 18px;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    /* end nav */
+    .map {
+        display: none;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -261,15 +365,15 @@ footer p {
         font-size: 16px;
     }
 
-    .products {
+    .offers {
         padding: 50px 0;
     }
 
-    .products h2 {
+    .offers h2 {
         font-size: 36px;
     }
 
-    .products ul li {
+    .offers ul li {
         font-size: 16px;
         margin-right: 20px;
     }

@@ -6,74 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ink'd Impressions</title>
     <link rel="stylesheet" href="Assets/style.css">
+    <script src="/Assets/menu.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="Assets//images/logos/Inkd Inverted Color 800x600.png" alt="Ink'd Impressions Logo">
+            <img src="Assets/images/logos/Inkd-Inverted-Color-800x600.png" alt="Ink'd-Impressions-Logo">
         </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="/about.html">About</a></li>
                 <li><a href="/product-gallery.html">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
 
     <!-- Hero Section -->
     <section class="hero">
         <h1>Ink'd Impressions</h1>
         <p>We're your one-stop shop for all your screen printing needs.</p>
-        <a href="#" class="btn">Get Started</a>
+        <p>Get a quote now!</p>
+        <a href="/contact.html" class="btn">Get Started</a>
     </section>
 
     <!-- About Section -->
     <section class="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>We are a locally owned & operated screenprinting business. We print on high quality blanks & look forward to working with you,whether it be for your small business, corporate business,recreational events,or even family get togethers, bring us your ideas!</p>
-            <a href="#" class="btn">Learn More</a>
+            <p>We are a locally veteran owned & operated screenprinting business. We print on high quality blanks & look forward
+                to working with you,whether it be for your small business, corporate business,recreational events,or
+                even family get togethers, bring us your ideas!</p>
+            <a href="/about.html" class="btn">Learn More</a>
         </div>
     </section>
 
-    <!-- Products Section -->
-<section class="products">
-    <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="Assets/images/products/legit-e1582582822663.jpg" alt="T-Shirt">
-                <h3>T-Shirt</h3>
-                <p>Our T-Shirts are made with high quality cotton and come in a variety of sizes and colors.</p>
-            </div>
-            <div class="product">
-                <img src="Assets/images/products/all-seasons.jpg" alt="Hoodie">
-                <h3>Hoodie</h3>
-                <p>Stay warm and stylish with our Hoodies, made with soft and durable fabric.</p>
-            </div>
-            <div class="product">
-                <img src="Assets/images/products/" alt="Hat">
-                <h3>Hat</h3>
-                <p>Protect yourself from the sun while looking cool with our Hats, available in various designs and colors.</p>
-            </div>
-            <div class="product">
-                <img src="Assets/images/products/" alt="Bag">
-                <h3>Bag</h3>
-                <p>Carry your essentials in style with our Bags, featuring sturdy construction and trendy designs.</p>
-            </div>
-            <div class="product">
-                <img src="Assets/images/products/" alt="Mug">
-                <h3>Mug</h3>
-                <p>Sip your favorite beverage from our Mugs, made with high quality ceramic and printed with stunning designs.</p>
+    <!-- Offers Section -->
+    <section class="offers">
+        <div class="container">
+            <h2>What we offer</h2>
+            <div class="offer-grid">
+                <div class="offer">
+                    <img src="Assets/images/msc/screenprinting.jpg" alt="screenprinting">
+                    <h3>Screen Printing</h3>
+                    <p>Create custom T-Shirts for your sports team, company, or event. Our high-quality cotton shirts
+                        come in a variety of sizes and colors, making them perfect for any occasion.</p>
+                </div>
+                <div class="offer">
+                    <img src="Assets/images/msc/sublimation.jpg" alt="Sublimation">
+                    <h3>Sublimation</h3>
+                    <p>Create stylish and comfortable Hoodies for your school, organization, or group. Our soft and
+                        durable fabric will keep you warm and looking good.</p>
+                </div>
+                <div class="offer">
+                    <img src="Assets/images/msc/embroidery.jpg" alt="Embroidery">
+                    <h3>Embroidery</h3>
+                    <p>Add a touch of professionalism to your work attire with our Embroidered Hats. Available in
+                        various designs and colors, they are perfect for businesses, clubs, or organizations.</p>
+                </div>
+                <div class="offer">
+                    <img src="Assets/images/msc/Dtfprinting.jpg" alt="DTF Printing">
+                    <h3>DTF Printing</h3>
+                    <p>Create unique and fashionable Bags for your personal use or business. Our sturdy construction and
+                        trendy designs will keep you looking good while carrying your essentials.</p>
+                </div>
+                <div class="offer">
+                    <img src="Assets/images/msc/promo.jpg" alt="Promotional">
+                    <h3>Promotional</h3>
+                    <p>Boost your brand visibility with our Promotional Mugs. Made with high-quality ceramic and printed
+                        with stunning designs, they are perfect for giveaways or corporate events.</p>
+                </div>
+                <div class="offer">
+                    <img src="Assets/images/msc/fundraiser.jpg" alt="Fundraisers">
+                    <h3>Fundraisers</h3>
+                    <p>Raise funds for your cause with our customizable merchandise. From T-Shirts to Hats, we offer a
+                        variety of items that can be tailored to your specific needs.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Contact Section -->
     <section class="contact">
@@ -89,7 +109,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message"></textarea>
 
-                <button type="submit">Send</button>
+                <button class="btn" type="submit">Send</button>
             </form>
         </div>
     </section>
@@ -97,6 +117,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <a target="_blank" href="https://nixascreenprinting.com/">Formerly Nixa Screen Printing</a>
             <p>&copy; 2023 Ink'd Impressions</p>
         </div>
     </footer>
