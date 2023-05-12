@@ -34,10 +34,11 @@ img:hover {
     td {
         display: flex;
         flex-direction: column;
-    
+
     }
+
     img:hover {
         transform: none;
     }
-   
+
 }

@@ -192,7 +192,8 @@ nav ul li a {
     margin-bottom: 20px;
     border: none;
 }
-.contact select{
+
+.contact select {
     font-size: 16px;
     padding: 10px;
     border-radius: 5px;
@@ -231,11 +232,13 @@ nav ul li a {
     height: 100%;
     margin: auto;
 }
-footer a{
+
+footer a {
     color: #ec5c24;
     width: 15vh;
     margin: auto;
 }
+
 .contact-info {
     display: flex;
     flex-direction: row;
